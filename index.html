@@ -1,33 +1,115 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Sohan — AI Chatbot Developer</title>
-    <style>
-        body { font-family: Arial, sans-serif; background:#f5f5f5; padding:40px; }
-        .card { background:white; padding:25px; max-width:600px; margin:auto; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.15); }
-        h1 { color:#333; }
-        p { line-height:1.6; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sohan — AI Chatbot Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="card">
-        <h1>Hi, I'm Sohan 👋</h1>
-        <h3>AI Chatbot Developer | Prompt Engineer | Automation Builder</h3>
-        <p>I build custom AI chatbots, automation systems, and AI-powered tools for businesses.  
-           My goal is to help companies save time, increase efficiency, and grow using AI.</p>
 
-        <h3>What I Can Do</h3>
-        <ul>
-            <li>AI Chatbot Development</li>
-            <li>Prompt Engineering</li>
-            <li>Automation (Make / Zapier / Pipedream)</li>
-            <li>Content Generation Tools</li>
-            <li>Website Chatbot Integration</li>
-        </ul>
-
-        <h3>Contact Me</h3>
-        <p>Email: your-email-here  
-           LinkedIn: your-link</p>
+<header class="header">
+  <div class="brand">
+    <div class="logo">S</div>
+    <div>
+      <h1 style="margin:0;font-size:14px">Sohan <small>AI Chatbot Developer</small></h1>
     </div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html">Blog</a>
+    <a class="cta" href="#contact">Hire Me</a>
+    <button class="btn" onclick="toggleTheme()" style="margin-left:10px">Toggle Theme</button>
+  </nav>
+
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+</header>
+
+<main>
+  <section class="hero container">
+    <div class="hero-left">
+      <h2>Hello — I build AI chatbots & automation</h2>
+      <p>Custom chatbots, prompt engineering, and workflow automation to save time and scale customer support.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="services.html">See Services</a>
+        <a class="btn" href="projects.html">View Projects</a>
+      </div>
+      <div style="margin-top:18px" class="note">Student-friendly pricing available • Free demo calls</div>
+    </div>
+
+    <div class="hero-right">
+      <div class="profile-card card fade-up">
+        <img src="assets/profile.jpg" alt="Sohan profile" onerror="this.style.display='none'">
+        <h3>Sohan</h3>
+        <p>AI Chatbot Developer • Prompt Engineer</p>
+        <div style="display:flex;gap:8px;justify-content:center;margin-top:8px">
+          <a class="btn" href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container fade-up" id="services-preview">
+    <div class="section-title"><h3>Services</h3></div>
+    <div class="services-grid">
+      <div class="service card">
+        <h4>Custom Chatbots</h4>
+        <p class="note">Web, WhatsApp, Facebook Messenger — lead capture, FAQs, and sales assistants.</p>
+      </div>
+      <div class="service card">
+        <h4>Workflow Automation</h4>
+        <p class="note">Make, Zapier, Pipedream flows to connect tools and reduce manual tasks.</p>
+      </div>
+      <div class="service card">
+        <h4>Prompt Engineering</h4>
+        <p class="note">Optimized prompts & templates to get reliable outputs for your operations.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:16px">
+      <a class="btn" href="services.html">Full Services & Pricing</a>
+    </div>
+  </section>
+
+  <section class="container fade-up" id="testimonials">
+    <div class="section-title"><h3>Testimonials</h3></div>
+    <div class="grid-3">
+      <div class="testimonial card">
+        <strong>Shop Owner</strong>
+        <p class="note">"Sohan built a support bot that now handles 60% of queries — saved our team hours."</p>
+      </div>
+      <div class="testimonial card">
+        <strong>Startup Founder</strong>
+        <p class="note">"Automations he set up reduced repetitive work and improved response time."</p>
+      </div>
+      <div class="testimonial card">
+        <strong>Client</strong>
+        <p class="note">"Fast, reliable, and excellent communication — student-friendly rates."</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container fade-up" id="contact">
+    <div class="section-title"><h3>Contact</h3></div>
+    <div class="card">
+      <p class="note">Want a free demo or quote? Message me below.</p>
+      <form action="https://formspree.io/f/mvgpzjoj" method="POST">
+        <div class="field"><input type="text" name="name" placeholder="Your name" required></div>
+        <div class="field"><input type="email" name="_replyto" placeholder="Your email" required></div>
+        <div class="field"><textarea name="message" placeholder="Tell me about your project" required></textarea></div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2025 Sohan • Built with ❤️ • <span class="note">Student-friendly</span>
+  </footer>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
